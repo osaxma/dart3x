@@ -1,7 +1,8 @@
 name: dartgres
 
 packages:
-  - /
+  # see: https://github.com/invertase/melos/issues/327#issuecomment-1159804318
+  - "**"
 
 
 ide:
