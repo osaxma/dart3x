@@ -1,6 +1,6 @@
 name: dart3x
 description: A collection of extensions and reusable functions for dart and flutter packages
-version: 0.0.1
+version: 0.0.1+1
 homepage: https://www.github.com/osaxma/dart3x
 
 environment:
