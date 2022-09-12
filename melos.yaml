@@ -1,0 +1,37 @@
+name: dartgres
+
+packages:
+  - /
+
+
+ide:
+  intellij: false
+
+command:
+  bootstrap:
+    usePubspecOverrides:
+      true
+
+  version:
+    # Only allow versioning to happen on main branch.
+    branch: main
+
+scripts:
+  # this is a hook on `melos version`
+  # version: dart run scripts/generate_version.dart
+
+  analyze:
+    description: Analayze the project 
+    exec: dart analyze .
+
+  format:
+    description: Format the project 
+    exec: dart format -l 120 lib
+
+  # activate:
+  #   description: Activate the local version of mid for development.
+  #   run: dart pub global activate --source="path" . --executable="mid" --overwrite
+
+  activate:pub:
+    description: Activate the published version of mid.
+    run: dart pub global activate mid --overwrite
